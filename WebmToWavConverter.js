@@ -84,7 +84,7 @@ async function _getAudioBuffer(blobData, contextOptions = undefined) {
  * @param {AudioContextOptions} contextOptions - optiosn needs to be used for encoding
  * @returns
  */
-async function getWaveBlob(blobData, as32BitFloat, contextOptions = undefined) {
+async function WebmToWavConverter(blobData, as32BitFloat, contextOptions = undefined) {
 	const audioBuffer = await _getAudioBuffer(blobData, contextOptions);
 
 	// Encoding setup.
@@ -134,4 +134,4 @@ async function getWaveBlob(blobData, as32BitFloat, contextOptions = undefined) {
 	});
 }
 
-module.exports = getWaveBlob;
+module.exports = WebmToWavConverter;
