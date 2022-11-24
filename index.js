@@ -1,3 +1,1 @@
-module.exports.WavRecorder = require("./WavRecorder");
-module.exports.getWaveBlob = require("./wavBlobUtil");
-module.exports.downloadWav = require("./downloadUtil");
+module.exports.WebmToWavConverter = require('./WebmToWavConverter');
